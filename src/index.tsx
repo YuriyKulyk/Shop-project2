@@ -7,7 +7,7 @@ const Title = () => {
 
 const Content = () => {
     return (
-        <div>
+        <React.Fragment>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
                 consectetur rerum cum voluptatem fugiat possimus! Magni, enim,
@@ -21,16 +21,16 @@ const Content = () => {
                     officiis.
                 </p>
             </p>
-        </div>
+        </React.Fragment>
     )
 }
 
 const App = () => {
     return (
-        <div>
+        <>
             <Title />
             <Content />
-        </div>
+        </>
     )
 }
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
