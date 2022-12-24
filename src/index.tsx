@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 type TitleProps = {
-    title: string
+    title?: string | number
 }
 
 const Title = (props: TitleProps) => {
@@ -11,7 +11,7 @@ const Title = (props: TitleProps) => {
 }
 
 const Content = () => {
-    return <React.Fragment></React.Fragment>
+    return <React.Fragment>-</React.Fragment>
 }
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
         <>
             <Title title="React" />
             <Title title="TS" />
-            <Title title="JS" />
+            <Title title={10} />
             <Content />
         </>
     )
